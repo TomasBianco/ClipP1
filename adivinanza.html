@@ -59,40 +59,24 @@
 
         </nav>
         <div class="container">
-            <form action="" class="from-inline justify-content-center flex-column flex-sm-row">
-                <div class="form-group">
-                    <!-- <script>
-                    var intentos = 0;
-                    var nombre = prompt("Cual es tu nombre ");
-                    var rta;
-
-                    for (let intentos = 0; intentos < 5; intentos++) {
-                        rta = prompt(nombre + " " + "¿Qué cosa silba sin labios, corre sin pies, te pega en la espalda y aún no lo ves? ");
-
-                        if (rta.toString()) {
-                            if (rta == "el viento" || "viento") {
-                                alert(nombre + " " + " Felicitaaiones ganaste");
-                                break; 
-                            } else {
-                                alert(nombre + " " + "Respuesta incorrecta");
-
-                            }
-                        } else {
-                            alert();
-
-                        }
-
-                    }
-                </script>
-                -->
+            <div class="row">
+                <div class="col-12 ">
+                    <h2 class="text-center">Al principio una cama y una fiera despues.</h2>
+                    <h2 class="text-center"> ¿ Sabes que animal es ?</h2>
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sit, maiores eveniet eum quod nihil sequi? Debitis magnam aliquid, esse consectetur dicta officia assumenda provident exercitationem laboriosam enim tempora delectus.</p>
-                    <br>
-                    <label for="respuesta" class="">Respuesta</label>
-                    <input name="respuesta" type="text">
+                    <div class="">
+                        <input type="text" id="rtaObtenida" class="border border-primary">
+
+                        <button type="button" class="btn btn-primary" onclick="adivinanza()" id="botonIntento">Enviar</button>
+                    </div>
                 </div>
-            </form>
+                <div class="col-5">
+                    <div id="pistasDar" class="ayudas"></div>
+                </div>
+            </div>
+
         </div>
+
     </div>
 
     <footer class="page-footer bg-dark ">
